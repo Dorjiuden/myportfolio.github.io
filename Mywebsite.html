@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Mywebsite.css">
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<title>My portfolio Website</title>
+	  <script>
+    function updateDateTime() {
+      var currentDate = new Date();
+      var dateElement = document.getElementById("date");
+      var timeElement = document.getElementById("time");
+
+      // Format the date
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var formattedDate = currentDate.toLocaleDateString(undefined, options);
+
+      // Format the time
+      var formattedTime = currentDate.toLocaleTimeString();
+
+      // Update the HTML elements
+      dateElement.innerHTML = formattedDate;
+      timeElement.innerHTML = formattedTime;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+  </script>
+</head>
+<header>
+	<div class="logo">
+		<img src="C:\Users\Dorji\Desktop\my portfolio\logo.png" height="150px" width="150px">
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#">HOME</a></li>
+		    <li><a href="#">ABOUT</a></li>
+		    <li><a href="#">CONTACT</a></li>
+		</ul>
+</header>
+<hr>
+<body>
+	<div class="search">
+			<input class="srch" type="search" name="#" placeholder="type to text">
+			<a href="#"><button class="btn">search</button></a>
+	</div>
+
+	<h1>I,m Dorji<span>Yuden</span></h1>
+    <p>This is my official portfolio website to show all
+    <br> Details and work experinces about web development.</p> 
+
+    <button class="btn1"><a href="#">DOWNLOAD CV</a></button><br><br><br><br><br>
+
+    <img class="photo" src="C:\Users\Dorji\Desktop\my portfolio\image.png"> <br>
+
+    <p class="dt">Date:<span id="date"></span><br> Time:<span id="time"></span></p>  
+</body>
+
+<footer>
+		<ul class="icon">
+		<li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+    <li><a href=""><ion-icon name="logo-twitter"></ion-icon></a></li>
+    <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+    <li><a href=""><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+  </ul>
+  <center><p>@dyuden31.| All Right Reserved</p></center>
+ 
+</footer>
+</html>
